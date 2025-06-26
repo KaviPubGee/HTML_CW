@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+*{
+    margin: 0;
+    border-width: 0;
+}
+
+body{
+    background-color: rgb(4, 3, 18);
+}
+
+.wrapper {
+    font-family: "Lilita One", sans-serif;
+    font-size: 150%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+}
+
+header{
+    background-color: #006994;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    background-color: #00aaff;
+    border-radius: 10px;
+}
+
+footer{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #002436;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+main{
+    padding-top: 80px;
+}
+
+#background-clip{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('Jellyfish.gif') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+#background-clip::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+}
+
+h1{
+    font-family:"Lilita One", sans-serif;
+    font-size: 100px;
+    color: rgb(180, 202, 237);
+    text-align: center;
+    padding-top: 250px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+#content{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#content a{
+    font-family:"Lilita One", sans-serif;
+    font-size: 18px;
+    color: rgb(180, 202, 237);
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#content a:hover{
+    background-color: rgb(238, 238, 238);
+    color: black;
+}
+
