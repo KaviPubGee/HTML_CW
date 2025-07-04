@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     border-width: 0;
@@ -122,38 +125,5 @@ main{
     top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
-}
-
-h1{
-    font-family:"Lilita One", sans-serif;
-    font-size: 100px;
-    color: white;
-    text-align: center;
-    padding-top: 150px;
-    letter-spacing: 5px;
-    font-weight: bold;
-}
-
-#content{
-    text-align: center;
-    padding-top: 50px;
-}
-
-#content a{
-    text-align: center;
-    font-family:"Lilita One", sans-serif;
-    font-size: 18px;
-    color: white;
-    letter-spacing: 3px;
-    text-decoration: none;
-    border: 2px solid white;
-    padding: 10px 25px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-#content a:hover{
-    background-color: rgb(238, 238, 238);
-    color: black;
 }
 

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     border-width: 0;
@@ -10,7 +13,7 @@ html{
 }
 
 body{
-    background-color: rgb(7, 4, 39);
+    background-color: rgb(4, 3, 18);
 }
 
 header {
@@ -30,7 +33,7 @@ header {
   z-index: 1000;
 }
 
-header nav{
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +41,14 @@ header nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
+}
+
+nav.scrolled {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav_logo img{
@@ -114,7 +125,7 @@ main{
 
 #background-clip::after {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
     background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
@@ -122,12 +133,13 @@ main{
 
 h1{
     font-family:"Lilita One", sans-serif;
-    font-size: 140px;
+    font-size: 150px;
     color: white;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 150px;
     letter-spacing: 5px;
-    padding-bottom: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
 }
 
 #content{
@@ -138,7 +150,7 @@ h1{
 #content a{
     text-align: center;
     font-family:"Lilita One", sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     color: white;
     letter-spacing: 3px;
     text-decoration: none;
@@ -153,110 +165,51 @@ h1{
     color: black;
 }
 
-#missions p{
-    font-size: 30px;
-    padding-right: 200px;
-    padding-left: 200px;
-}
-
-#missions{
-    padding-top: 400px;
-    scroll-margin-top: -250px;
-}
-
-
-#mission-Heading{
-    padding-top: 80px !important;
-    font-size: 100px;
-}
-
-h2{
+#content h2{
     font-family:"Lilita One", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: white;
     text-align: center;
-    position: relative;
+    padding-top: 480px;
     letter-spacing: 5px;
-    padding-bottom: 10px;
+    font-weight: bold;
+    padding-bottom: 80px;
 }
 
-
-#our-mission{
-    color: white;
-    text-align: center;
-    font-family:"Lilita One", sans-serif;
-    padding-top: 100px;
-    line-height: 50px;
-
-}
-
-.exp-header{
-    padding-top: 200px;
-}
-
-
-.topics{
-    margin-top: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
-    padding: 32px;
-}
-
-.card{
-    background-color: rgba(255, 255, 255, 0.1);
-    position: relative;
-    bottom: 290px;
-    border:1px solid #fff;
+table{
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px;
+    font-family: "Montserrat", sans-serif;
     border-radius: 10px;
-    padding: 16px;
-    width: 320px;
-    text-align: center;
-    transition: transform 0.3s, background-color 0.3s;
-    backdrop-filter: blur(5px);
-    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
 }
 
-.card:hover{
-    transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: 2;
-}
-
-.card img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.card h3{
-    margin-top: 16px;
-    color: rgb(180, 202, 237);
-    font-family: "Lilita One", sans-serif;
-    letter-spacing: 2px;
-    font-size: 22px;
-}
-
-.card a{
-    display: inline-block;
-    margin-top: 50px;
-    font-size: 22px !important;
-    padding: 8px 16px !important;
+table, th, td{
     color: white;
     border: 2px solid white;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-family: "Lilita One", sans-serif;
+    border-collapse: collapse;
 }
 
-.card a:hover{
-    background-color: rgb(238, 238, 238);
-    color: black;
+th, td{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 16px 24px;
+    text-align: center;
 }
 
-#explore_topics{
-   padding-top: 200px;
+th{
+    background-color: #025ab8;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#table{
+    scroll-margin-top: -280px;
 }
