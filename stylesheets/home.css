@@ -153,20 +153,49 @@ h1{
     color: black;
 }
 
+#missions p{
+    font-size: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+#missions{
+    padding-top: 400px;
+    scroll-margin-top: -250px;
+}
+
+
+#mission-Heading{
+    padding-top: 80px !important;
+    font-size: 100px;
+}
+
 h2{
     font-family:"Lilita One", sans-serif;
     font-size: 80px;
     color: white;
     text-align: center;
     position: relative;
-    top: 400px;
     letter-spacing: 5px;
-    padding-bottom: 140px;
+    padding-bottom: 10px;
+}
+
+
+#our-mission{
+    color: white;
+    text-align: center;
+    font-family:"Lilita One", sans-serif;
+    padding-top: 100px;
+
+}
+
+.exp-header{
+    padding-top: 100px;
 }
 
 
 .topics{
-    margin-top: 630px;
+    margin-top: 320px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -228,5 +257,5 @@ h2{
 }
 
 #explore_topics{
-   scroll-margin-top: -250px;
+   padding-top: 200px;
 }
