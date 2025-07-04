@@ -19,7 +19,7 @@
         </div>
         <div class="nav_links">
           <a href="home.html">Home</a>
-          <a href="volunteer.html">Volunteer</a>
+          <a class="currentPage" href="volunteer.html">Volunteer</a>
           <a href="table.html">Stats</a>
           <a href="feedback.html">Feedback</a>
           <a href="team.html">Team</a>
@@ -235,22 +235,13 @@
 
     <footer>
       <p>
-        &copy; 2025 Life Below Water |
-        <a class="footer-link" href="pageEditor_ST1.html"
-          >Student 1 Page Editor</a
-        >
+        <div id="motto">Cleaning the Ocean One Step At A Time!</div><br/>
+        <a class="footer-link" href="pageEditor_ST1.html">Page Editor Student 1 |</a>
+        <a class="footer-link" href="pageEditor_ST2.html">Page Editor Student 2 |</a>
+        <a class="footer-link" href="pageEditor_ST3.html">Page Editor Student 3 |</a>
+        <a class="footer-link" href="pageEditor_ST4.html">Page Editor Student 4 |</a>
+        <br/><br/>| &copy; 2025 Blue World Rising |
       </p>
     </footer>
-
-    <script>
-      window.addEventListener("scroll", function () {
-        const nav = document.querySelector("nav");
-        if (window.scrollY > 30) {
-          nav.classList.add("scrolled");
-        } else {
-          nav.classList.remove("scrolled");
-        }
-      });
-    </script>
   </body>
 </html>
