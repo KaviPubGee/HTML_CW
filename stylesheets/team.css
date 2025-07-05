@@ -1,0 +1,91 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 130px 15px 40px;
+}
+
+#content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+#intro {
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    width: 280px;
+    height: 450px;
+    position: relative;
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0;
+}
+
+.member:hover .details {
+    opacity: 1;
+}
+
+.details h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 5px;
+    color: #fff;
+}
+
+.details p {
+    font-size: 0.9rem;
+    color: #99bbff;
+    margin: 0 0 10px;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    font-size: 0.8rem;
+    color: #ddd;
+}
