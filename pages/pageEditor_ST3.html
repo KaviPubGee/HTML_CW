@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Lorshan Harith Ravichandran</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/ST3_pageEditor_validator.css">
+</head>
+<body>
+    <div id="background-clip"></div>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <img src="../assets/img/Logo.png" alt="Logo">
+            </div>
+            <div class="nav_links">
+                <a href="home.html">Home</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="table.html">Stats</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="team.html">Team</a>
+                <a href="profile.html">Profile</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </nav>
+    </header>
+    <section class="stud">
+        <h2>Lorshan Harith Ravichandran, Student 3</h2>
+    </section>
+    <div class="container">
+        <main>
+            <section>
+                <h2 id="feedback">Feedback Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    The Feedback page uses a form with three fieldsets for personal details, feedback details, and ratings. It includes inputs like text, email, tel, file, and a textarea, with a datalist for topic selection. CSS uses flexbox for layout, with validation styling (red borders for invalid inputs, blue on focus) and hover effects on buttons and emojis (grayscale to color transition).
+                </p>
+                <br>
+                <ul>
+                    <li><strong>HTML Tags:</strong> &lt;form&gt;, &lt;fieldset&gt;, &lt;legend&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;datalist&gt;</li>
+                    <li><strong>CSS Techniques:</strong> Flexbox, validation pseudo-classes, hover effects, rgba borders</li>
+                </ul>
+                <br>
+                <h3>Accessibility</h3>
+                <p>
+                    Labels are linked to inputs with for attributes, and title attributes guide validation errors. High-contrast text and keyboard-accessible inputs (radio, checkbox) ensure usability. Emojis lack aria-labels, which could be added for better screen reader support.
+                </p>
+                <br>
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST3.html#feedbackVal">Click here</a>, use the marker to jump to the corresponding section of the validation page.
+                </p>
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="feedback.html">Feedback Page</a>
+                </p>
+            </section>
+            <section>
+                <h2 id="team">Team Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    The Team page displays four member cards in a flexbox grid. Each card has a relative-positioned image with an absolute-positioned details div that appears on hover (opacity transition). The layout is responsive with max-width and gap properties.
+                </p>
+                <br>
+                <ul>
+                    <li><strong>HTML Tags:</strong> &lt;div&gt;, &lt;img&gt;, &lt;h2&gt;, &lt;ul&gt;</li>
+                    <li><strong>CSS Techniques:</strong> Flexbox, absolute positioning, opacity transitions, object-fit</li>
+                </ul>
+                <br>
+                <h3>Accessibility</h3>
+                <p>
+                    Images have descriptive alt text, and cards are keyboard-focusable with tabindex="0". High-contrast text aids readability, but hover-only details could use focus styles for better keyboard accessibility.
+                </p>
+                <br>
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST3.html#teamVal">Click here</a>, use the marker to jump to the corresponding section of the validation page.
+                </p>
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="team.html">Team Page</a>
+                </p>
+            </section>
+            <section>
+                <h2 id="content">Content Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    The Content page features a sticky sidebar with anchor links to sections on coral reefs, coastal habitats, food webs, and human dependence. Content is organized in flexbox cards with responsive images. A fixed "Go to Top" button enables smooth scrolling.
+                </p>
+                <br>
+                <ul>
+                    <li><strong>HTML Tags:</strong> &lt;aside&gt;, &lt;section&gt;, &lt;ul&gt;, &lt;img&gt;, &lt;a&gt;</li>
+                    <li><strong>CSS Techniques:</strong> Sticky positioning, flexbox, smooth scrolling, responsive images</li>
+                </ul>
+                <br>
+                <h3>Accessibility</h3>
+                <p>
+                    Descriptive sidebar links and alt text for images support screen readers. A clear heading structure and keyboard-accessible "Go to Top" button (with aria-label) enhance navigation. High-contrast colors ensure readability.
+                </p>
+                <br>
+                <h3>Link to the validation page</h3>
+                <p>
+                    <a href="validation_ST3.html#contentVal">Click here</a>, use the marker to jump to the corresponding section of the validation page.
+                </p>
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="content_ST3.html">Content Page</a>
+                </p>
+            </section>
+            <section>
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <br>
+                <p>
+                    On the Feedback page, preventing premature red borders on invalid inputs was tricky. Using :invalid:not(:placeholder-shown) fixed this. The Team page’s hover effects weren’t keyboard-accessible, so I added tabindex="0". The Content page’s sticky sidebar needed scroll-margin-top to avoid header overlap.
+                </p>
+                <br>
+                <p>
+                    Lesson: Accessibility requires testing across mouse, keyboard, and screen reader interactions to ensure inclusivity.
+                </p>
+                <br>
+                <p>
+                    I learned the importance of semantic HTML and validation early in development to catch issues before deployment.
+                </p>
+                <br>
+            </section>
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <br>
+                <p>
+                    My pages use semantic HTML (&lt;header&gt;, &lt;main&gt;, &lt;section&gt;) for clear structure. All images include descriptive alt text for screen readers.
+                </p>
+                <br>
+                <p>
+                    Color contrast and font sizing were checked for readability. Navigation is keyboard-accessible with smooth scrolling for user experience.
+                </p>
+                <br>
+                <p>
+                    CSS and HTML passed W3C validation. All external resources are licensed or royalty-free, aligning with JANET guidelines for web publishing.
+                </p>
+            </section>
+            <section>
+                <h2 id="ref">References</h2>
+                <br>
+                <p>Below are links to resources I used:<br><br></p>
+                <ul class="ref">
+                    <li>MDN Web Docs (2025). <i>HTML and CSS Documentation</i>. Available at: <a href="https://developer.mozilla.org/" target="_blank">https://developer.mozilla.org/</a></li>
+                    <li>W3Schools (2025). <i>CSS Flexbox Guide</i>. Available at: <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">https://www.w3schools.com/css/css3_flexbox.asp</a></li>
+                    <li>Stack Overflow (2025). <i>Form Validation in HTML</i>. Available at: <a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a></li>
+                    <li>W3C (2025). <i>HTML Validation Service</i>. Available at: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a></li>
+                    <li>W3C (2025). <i>CSS Validation Service</i>. Available at: <a href="https://jigsaw.w3.org/css-validator/" target="_blank">https://jigsaw.w3.org/css-validator/</a></li>
+                    <li>Unsplash (2025). <i>Free Ocean Images</i>. Available at: <a href="https://unsplash.com" target="_blank">https://unsplash.com</a></li>
+                </ul>
+            </section>
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+        <aside>
+            <h3>Core pages developed:</h3>
+            <br>
+            <ul class="top-level-ul">
+                <li>Student 3
+                    <ul>
+                        <li><a href="#feedback">Feedback page</a></li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <div>
+            <div id="motto">Cleaning the Ocean One Step At A Time!</div><br>
+            <a class="footer-link" href="pageEditor_ST1.html">Page Editor Student 1 |</a>
+            <a class="footer-link" href="pageEditor_ST2.html">Page Editor Student 2 |</a>
+            <a class="footer-link" href="pageEditor_ST3.html">Page Editor Student 3 |</a>
+            <a class="footer-link" href="pageEditor_ST4.html">Page Editor Student 4 |</a>
+            <br><br>| © 2025 Blue World Rising |
+            <a class="footer-link" href="teamContract.html">Team Contract</a>
+        </div>
+    </footer>
+</body>
+</html>
