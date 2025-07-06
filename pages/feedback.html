@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/feedback.css">
 </head>
-
 <body>
     <div id="background-clip"></div>
     <header>
@@ -31,39 +29,52 @@
     <main>
         <div id="content">
             <h1>YOUR FEEDBACK</h1>
-            <p id="intro">Tell us how we can improve our mission to protect the oceans!</p>
+            <p id="intro">Help us protect our oceans! Share your thoughts.</p>
             <form action="#" method="post" class="feedback">
-                <div class="section">
-                    <h2>Personal Info</h2>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required title="Please enter your full name">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                </div>
-                <div class="section">
-                    <h2>Your Thoughts</h2>
-                    <label for="topic">Feedback Type:</label>
-                    <select id="topic" name="topic">
-                        <option value="general">General</option>
-                        <option value="design">Website Design</option>
-                        <option value="content">Content</option>
-                        <option value="volunteer">Volunteering</option>
-                    </select>
-                    <p>First time here?</p>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required title="Please enter a valid email address, e.g., you@example.com">
+                    <label for="tel">Telephone:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number, e.g., 123-456-7890">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" maxlength="200" placeholder="Your address" required title="Please enter your address"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    <label for="topic">Feedback Topic:</label>
+                    <input list="topics" id="topic" name="topic" placeholder="Select or type a topic" required title="Please select or enter a topic">
+                    <datalist id="topics">
+                        <option value="General">
+                        <option value="Website Design">
+                        <option value="Content">
+                        <option value="Volunteering">
+                    </datalist>
+                    <label>Feedback Categories:</label>
+                    <label><input type="checkbox" name="category" value="ui"> User Interface</label>
+                    <label><input type="checkbox" name="category" value="content"> Content Accuracy</label>
+                    <label><input type="checkbox" name="category" value="events"> Events</label>
+                    <label for="visited">First time here?</label>
                     <label><input type="radio" name="visited" value="yes"> Yes</label>
                     <label><input type="radio" name="visited" value="no"> No</label>
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="4" maxlength="500" placeholder="Max 500 characters"
-                        required></textarea>
-                    <label for="file">Attach File:</label>
+                    <label for="comment">Comment (max 500 chars):</label>
+                    <textarea id="comment" name="comment" rows="4" maxlength="500" placeholder="Your feedback (500 chars max)" required title="Please enter your feedback"></textarea>
+                    <span id="char-count">500</span>
+                    <label for="date">Feedback Date:</label>
+                    <input type="date" id="date" name="date" required title="Please select a date">
+                    <label for="datetime">Schedule Feedback:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" required title="Please select a date and time">
+                    <label for="file">Attach File (PNG, JPEG, PDF):</label>
                     <input type="file" id="file" name="file" accept="image/png,image/jpeg,application/pdf">
-                </div>
-                <div class="section">
-                    <h2>Rate Us</h2>
+                </fieldset>
+                <fieldset>
+                    <legend>Rate Us</legend>
                     <div class="emojis">
                         <span>😞</span><span>😐</span><span>🙂</span><span>😊</span><span>🤩</span>
                     </div>
-                </div>
+                </fieldset>
                 <div class="buttons">
                     <button type="submit">Submit</button>
                     <button type="reset">Clear</button>
@@ -71,18 +82,23 @@
             </form>
         </div>
     </main>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/>
 
     <footer>
-        <div>
+        <p>
             <div id="motto">Cleaning the Ocean One Step At A Time!</div><br>
             <a class="footer-link" href="pageEditor_ST1.html">Page Editor Student 1 |</a>
             <a class="footer-link" href="pageEditor_ST2.html">Page Editor Student 2 |</a>
             <a class="footer-link" href="pageEditor_ST3.html">Page Editor Student 3 |</a>
             <a class="footer-link" href="pageEditor_ST4.html">Page Editor Student 4 |</a>
-            <br><br>| &copy; 2025 Blue World Rising |
+            <br><br>| © 2025 Blue World Rising |
             <a class="footer-link" href="teamContract.html">Team Contract</a>
-        </div>
+        </p>
     </footer>
 </body>
-
 </html>
