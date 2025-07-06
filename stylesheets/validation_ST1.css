@@ -1,0 +1,67 @@
+/* validation_ST1.css */
+
+.validation-page {
+  max-width: 1200px;
+  margin: 8rem auto 2rem auto;
+  
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e6f2ff;
+}
+
+.validation-page section {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.validation-page section:hover {
+  transform: translateY(-4px);
+}
+
+.validation-page h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  border-bottom: 2px solid #4ac3ff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.validation-page p {
+  font-size: 1rem;
+  color: #dbeeff;
+  line-height: 1.6;
+}
+
+.validation-page img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Optional: Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .validation-page {
+    padding: 1rem;
+  }
+
+  .validation-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .validation-page p {
+    font-size: 0.95rem;
+  }
+}
