@@ -79,3 +79,7 @@ aside li{
 img{
     width: 90%;
 }
+
+#background-clip{
+    position: fixed;
+}
