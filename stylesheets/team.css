@@ -94,3 +94,7 @@ h1 {
     font-size: 0.8rem;
     color: #ddd;
 }
+
+#background-clip{
+    position: fixed;
+}
