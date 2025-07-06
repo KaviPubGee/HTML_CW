@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 130px 15px 40px;
+}
+
+#content {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 
+
+5px rgba(0, 0, 0, 0.6);
+}
+
+#intro {
+    text-align: center;
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.feedback {
+    background: rgba(0, 0, 20, 0.7);
+    padding: 20px;
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    border-radius: 8px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section h2 {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1.5rem;
+    color: #99bbff;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0099ff;
+    outline: none;
+}
+
+input:invalid {
+    border-color: #ff4444;
+}
+
+label[for="radio"] {
+    display: inline;
+    margin-right: 10px;
+}
+
+.emojis {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.emojis span {
+    margin: 0 5px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.emojis span:hover,
+.emojis span:active {
+    filter: grayscale(0);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    font-family: 'Lilita One', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #0044cc;
+    border-color: #0044cc;
+}
+
+button[type="reset"]:hover {
+    background: #555;
+    border-color: #555;
+}
