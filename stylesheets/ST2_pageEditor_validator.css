@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -56,7 +59,7 @@ aside li{
     line-height: 0;
     background-color: #007bff;
     color: white;
-    margin-top: 8rem;
+    margin-top: 128px;
 }
 
 .top {
@@ -86,4 +89,32 @@ img{
 
 #background-clip{
     position: fixed;
+}
+
+#home {
+    scroll-margin-top: 220px;
+}
+#stats {
+    scroll-margin-top: 220px;
+}
+#content {
+    scroll-margin-top: 220px;
+}
+#challenge {
+    scroll-margin-top: 220px;
+}
+#compliance {
+    scroll-margin-top: 220px;
+}
+#ref{
+    scroll-margin-top: 220px;
+}
+#homeVal{
+    scroll-margin-top: 220px;
+}
+#statsVal{
+    scroll-margin-top: 220px;
+}
+#contentVal{
+    scroll-margin-top: 220px;
 }

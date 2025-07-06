@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - Kavindu Pabasara Geeganage</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/ST2_pageEditor_validator.css">
+</head>
+
+<body>
+
+
+    <div id="background-clip"></div>
+    <header>
+        <nav>
+            <div class="nav_logo">
+                <img src="../assets/img/Logo.png" alt="Logo">
+            </div>
+            <div class="nav_links">
+                <a href="home.html">Home</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="table.html">Stats</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="team.html">Team</a>
+                <a href="profile.html">Profile</a>
+                <a href="sitemap.html">Sitemap</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="stud">
+        <h2>Kavindu Pabasara Geeganage, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <main>
+
+            <section>
+                <h2 id="home">Home Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    The home page uses a minimalist layout with centered text element and a button
+                    to introduce the site to the user. It also consists of our mission, and finally a beautifully layed
+                    out set of cards introducing the user to each subtopic we prepared.
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <strong>HTML Tags:</strong> &lt;nav&gt;, &lt;h1&gt;, &lt;a&gt;, &lt;main&gt;, &lt;section&gt;
+                    </li>
+                    <li>
+                        <strong>CSS Techniques:</strong> Scroll animation, Hover effects, Blur effects, background
+                        opacity
+                    </li>
+                </ul>
+                <br>
+                <h3>Accessibility</h3>
+
+                <p>
+                    The home page includes some alt texts for all the images for screen readers, as well as clear
+                    headings with good color contrasts, keyboard-navigable buttons.
+                </p>
+
+                <br>
+                <h3>Link to the validation page</h3>
+
+                <p>
+                    <a href="validation_ST2.html#homeVal">Click here</a>, use the
+                    marker to jump to the corresponding section of the validation page.
+                </p>
+
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="home.html">Home Page</a>
+                </p>
+            </section>
+
+            <section>
+                <h2 id="stats">Table Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    This page uses tables to display the ocean pollution levels and consists of alternating row colors.
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <strong>HTML Tags:</strong> &lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;, &lt;th&gt;,
+                        &lt;td&gt;
+                    </li>
+                    <li>
+                        <strong>CSS:</strong> border-collapse, box-shadow, hover states, max-width, responsive font
+                        sizing
+                    </li>
+                </ul>
+                <br>
+                <h3>Accessibility</h3>
+                <p>
+                    Table headers use &lt;th&gt; for screen reader accessibility. The table has a contrast for
+                    readability and the used structure helps screen readers can navigate by column and row.
+                </p>
+                <br>
+                <h3>Link to the validation page</h3>
+
+                <p>
+                    <a href="validation_ST2.html#statsVal">Click here</a>, use the
+                    marker to jump to the corresponding section of the validation page.
+                </p>
+
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="table.html">Stats page</a>
+                </p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                <br>
+                <h3>Technical Description</h3>
+                <p>
+                    This page is a scrollable one-pager focused on the topic of Ocean Pollution. It features a fixed
+                    vertical sidebar with links to key sections, such as: Introduction, Causes, Effects, and Solutions.
+                    The main content is organized using flexbox and placed inside glass-style cards with blur effects.
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        <strong>HTML Tags:</strong> &lt;aside&gt;, &lt;section&gt;, &lt;nav&gt;, &lt;ul&gt;, &lt;h2&gt;
+                    </li>
+                    <li>
+                        <strong>CSS:</strong> position: fixed, flexbox layout, backdrop-filter blur, semantic
+                        sectioning, scroll-margin-top
+                    </li>
+                </ul>
+
+                <br>
+                <h3>Accessibility</h3>
+                <p>
+                    The sidebar links use descriptive links for screen readers. The content uses high-contrast
+                    colors, and large font sizes for readability. All images have alt text and are aligned
+                    to not obstruct reading flow.
+                </p>
+                <br>
+                <h3>Link to the validation page</h3>
+
+                <p>
+                    <a href="validation_ST2.html#contentVal">Click here</a>, use the
+                    marker to jump to the corresponding section of the validation page.
+                </p>
+
+                <br>
+                <h3>Link to the page</h3>
+                <p>
+                    <a href="content_ST2.html">Student 2 Content Page</a>
+                </p>
+            </section>
+
+            <section>
+                <h2 id="challenge">Challenges and Lessons Learned</h2>
+                <br>
+                <p>
+                    For the Content page, managing a fixed sidebar without overlapping the footer was tricky. I
+                    experimented with positioning and grid layouts to keep the sidebar accessible without
+                    breaking the layout. This taught me how important layout planning and scroll margin are. Another
+                    challenge I faced was aligning the logo in the navigation bar, this was a easy fix with the use of
+                    &lt;div&gt; tags. This gave a me a better understanding on blocklevel and inline elements.
+                </p>
+                <br>
+                <p>
+                    Lesson: Proper clear design and testing are crucial for
+                    accessibility and the best possible user experience.
+                </p>
+                <br>
+                <p>
+                    I also learned the importance of using animations to make the website feel more smoother all while
+                    not sacrificing the performance .
+                </p>
+                <br>
+            </section>
+
+            <section>
+                <h2 id="compliance">Compliance</h2>
+                <br>
+                <p>
+                    My pages follow HTML5 standards with semantic tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,
+                    and &lt;section&gt; for accessibility and clear structure. All images include descriptive alt text
+                    for screen readers.
+                </p>
+                <br>
+                <p>
+                    Color contrast and font sizing were checked to ensure readability. Navigation is consistent and
+                    keyboard-accessible, with smooth scrolling to improve user experience.
+                </p>
+                <br>
+                <p>
+                    CSS and HTML were validated using the W3C validation tools. All external resources are licensed for
+                    use or royalty-free. The design is in line with JANET guidelines and best practices for web
+                    publishing.
+                </p>
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <br>
+                <p>Below are links to resources I used :<br><br></p>
+                <ul class="ref">
+                    <li>
+                        MDN Web Docs (2025). <i>HTML and CSS Documentation</i>. Available at:
+                        <a href="https://developer.mozilla.org/" target="_blank">https://developer.mozilla.org/</a>
+                    </li>
+                    <li>
+                        W3Schools (2025). <i>CSS Flexbox Guide</i>. Available at:
+                        <a href="https://www.w3schools.com/css/css3_flexbox.asp"
+                            target="_blank">https://www.w3schools.com/css/css3_flexbox.asp</a>
+                    </li>
+                    <li>
+                        Stack Overflow (2025). <i>How to Center Images in Flexbox</i>. Available at:
+                        <a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a>
+                    </li>
+                    <li>
+                        W3C (2025). <i>HTML Validation Service</i>. Available at:
+                        <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a>
+                    </li>
+                    <li>
+                        W3C (2025). <i>CSS Validation Service</i>. Available at:
+                        <a href="https://jigsaw.w3.org/css-validator/"
+                            target="_blank">https://jigsaw.w3.org/css-validator/</a>
+                    </li>
+                    <li>
+                        Unsplash (2025). <i>Free Ocean Images</i>. Available at:
+                        <a href="https://unsplash.com" target="_blank">https://unsplash.com</a>
+                    </li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+
+        <aside>
+            <h3>Core pages developed:</h3>
+            <br>
+
+            <ul class="top-level-ul">
+
+                <li>Student 2
+                    <ul>
+                        <li><a href="#home">Home page</a></li>
+                        <li><a href="#stats">Table page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                </li>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div>
+            <div id="motto">Cleaning the Ocean One Step At A Time!</div><br>
+            <a class="footer-link" href="pageEditor_ST1.html">Page Editor Student 1 |</a>
+            <a class="footer-link" href="pageEditor_ST2.html">Page Editor Student 2 |</a>
+            <a class="footer-link" href="pageEditor_ST3.html">Page Editor Student 3 |</a>
+            <a class="footer-link" href="pageEditor_ST4.html">Page Editor Student 4 |</a>
+            <br><br>| &copy; 2025 Blue World Rising |
+            <a class="footer-link" href="teamContract.html">Team Contract</a>
+        </div>
+    </footer>
+</body>
+
+</html>

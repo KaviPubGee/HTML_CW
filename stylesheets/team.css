@@ -24,6 +24,7 @@ h1 {
     font-size: 4rem;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 50px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -47,6 +48,7 @@ h1 {
     border: 1px solid rgba(100, 150, 255, 0.3);
     border-radius: 8px;
     overflow: hidden;
+    letter-spacing: 1px;
 }
 
 .member img {
@@ -64,6 +66,7 @@ h1 {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
     opacity: 0;
+    transition: 0.4s;
 }
 
 .member:hover .details {
@@ -88,4 +91,8 @@ h1 {
     padding: 0;
     font-size: 0.8rem;
     color: #ddd;
+}
+
+#background-clip{
+    position: fixed;
 }
