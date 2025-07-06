@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..stylesheets/userProfile.css">
+    <style>
+           *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg,rgb(7, 4, 39) 0%, #2c5aef 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 300px 1fr 350px;
+            grid-template-rows: auto auto auto;
+            gap: 20px;
+            grid-template-areas: 
+            "profile main sidebar"
+            "profile main sidebar"
+            "profile main sidebar";
+        }
+
+        .card{
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3 ease;
+        }
+
+        .card:hover{
+            transform: translate(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .profile-section{
+            grid-area: profile;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe);
+        }
+        .profile-image{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20 px;
+            background: #ffd700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            border: 4px solid white;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .profile-quote {
+            font-style: italic;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        .profile-stats{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 12px;
+            font-weight: bold;
+            display: block;
+        }
+        .stat-label {
+            font-size: 12px;
+            opacity: left;
+        }
+        .skills-section { 
+            margin-top: 30px;
+            text-align: left;
+        }
+        .skill-bar {
+            margin: 15px 0;
+        }
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .skill-fill {
+            height: 100%;
+            background: white;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        /* Main Content */
+        .main-content {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            color: #6c5ce7;
+        }
+
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            background: #6c5ce7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+        }
+        .section-title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .goals-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .goal-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #6c5ce7;
+        }
+         .frustration-item {
+            padding: 15px;
+            background: #fff5f5;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+            margin-bottom: 10px;
+        }
+        .experience-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .experience-title {
+            font-weight: bold;
+            color: #2d3436;
+            margin-bottom: 10px;
+        }
+
+        .experience-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            font-size: 14px;
+            color: #636e72;
+        }
+         .un-goals {
+            background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .un-goals-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .un-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-input {
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #6c5ce7;
+        }
+
+        .form-textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            padding: 12px 24px;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            /* transition: background 0.3s ease; */
+        }
+        .submit-btn:hover {
+            background: #5a4fcf;
+        }
+
+        
+         @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    "profile"
+                    "main"
+                    "sidebar";
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card profile-section">
+            <div class="profile-image">🧟‍♂️</div>
+            <div class="profile-name">R.D.S.Dinal Ranbandara</div>
+            <div class="profile-quote">"No one can live without water"</div>
+
+            <div class="profile-stats">
+                <div class="stat">
+                    <span class="stat-number">19</span>
+                    <span class="stat-label">Age</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Family</span>
+                </div>
+            </div>
+
+            <div class="skill-section">
+                <h3>Skills</h3>
+                <div class="skill-bar">
+                    <div class="skill-name">Leadership</div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Teamwork</div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Creativity</div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="skill-progress">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <div class="section-header">
+                    <div class="section-icon">🎯</div>
+                    <div class="section-title">Goals</div>
+                </div>
+                <div class="goals-grid">
+                    <div class="goal-item">
+                        <strong>Goal 1:</strong> Participate beach cleanups every month
+                    </div>
+                    <div class="goal-item">
+                        <strong>Goal 2:</strong> Text Here
+                    </div>
+                    <div class="goal-item">
+                        <strong>Goal 3:</strong> Text Here
+                    </div>
+                    <div class="goal-item">
+                        <strong>Goal 4:</strong> Text Here
+                    </div>
+                </div>
+            </div>
+
+            <div class="card un-goals">
+                <div class="section-header" style="color: white;">
+                    <div class="section-icon" style="background: rgba(255,255,255,0.2);">🌍</div>
+                    <div class="section-title">UN goals I support</div>
+                </div>
+                <div class="un-goals-icons">
+                    <div class="un-icon" style="background: #e74c3c;">1</div>
+                    <div class="un-icon" style="background: #f39c12;">2</div>
+                    <div class="un-icon" style="background: #f1c40f;">3</div>
+                    <div class="un-icon" style="background: #27ae60;">4</div>
+                    <div class="un-icon" style="background: #3498db;">6</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="section-header">
+                    <div class="section-icon">😤</div>
+                    <div class="section-title">Frustrations</div>
+                </div>
+                <div class="frustration-item">
+                    <strong>1.</strong> Text Here
+                </div>
+                <div class="frustration-item">
+                    <strong>2.</strong> Text Here
+                </div>
+            </div>
+            <div class="card">
+                <div class="section-header">
+                    <div class="section-icon">💼</div>
+                    <div class="section-title">Experience</div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-title">Brief Description</div>
+                    <div class="experience-details">
+                        <div><strong>1.</strong> Text Here</div>
+                        <div><strong>2.</strong> Text Here</div>
+                        <div><strong>3.</strong> Text Here</div>
+                        <div><strong>4.</strong> Text Here</div>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-title">Text here</div>
+                    <div class="experience-details">
+                        <div><strong>1.</strong> Text Here</div>
+                        <div><strong>2.</strong> Text Here</div>
+                        <div><strong>3.</strong> Text Here</div>
+                        <div><strong>4.</strong> Text Here</div>
+                    </div>
+                </div>
+        </div>
+        
+            
+            <!-- Contact Form -->
+            <div class="card">
+                <div class="section-header">
+                    <div class="section-icon">📧</div>
+                    <div class="section-title">Contact me</div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" class="form-input" placeholder="Name">
+                    <input type="email" class="form-input" placeholder="Email">
+                    <textarea class="form-input form-textarea" placeholder="Message"></textarea>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>      
+        </div>
+    </div>
+    
+</body>
+</html>
