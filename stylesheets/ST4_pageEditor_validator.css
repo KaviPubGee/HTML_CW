@@ -87,7 +87,51 @@ img{
 .top a:hover{
     position: fixed;
 }
+.section {
+    background-color: #f0f8ff;
+    border: 2px solid #0077b6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 
+}
 #background-clip{
     position: fixed;
+}
+#feedback {
+    scroll-margin-top: 220px;
+}
+
+#team {
+    scroll-margin-top: 220px;
+}
+
+#content {
+    scroll-margin-top: 220px;
+}
+
+#challenge {
+    scroll-margin-top: 220px;
+}
+
+#compliance {
+    scroll-margin-top: 220px;
+}
+
+#ref {
+    scroll-margin-top: 220px;
+}
+
+#feedbackVal {
+    scroll-margin-top: 220px;
+}
+
+#teamVal {
+    scroll-margin-top: 220px;
+}
+
+#contentVal {
+    scroll-margin-top: 220px;
 }
