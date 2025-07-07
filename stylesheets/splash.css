@@ -25,6 +25,7 @@ body::before {
 }
 
 /* Centering Splash Container */
+/* reference: https://codepen.io/abehjat/pen/oXMENv */
 #splash-container {
   position: fixed;
   top: 50%;
