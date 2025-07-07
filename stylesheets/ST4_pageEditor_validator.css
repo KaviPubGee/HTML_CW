@@ -97,6 +97,16 @@ img{
     transition: transform 0.2s ease-in-out;
 
 }
+.section:hover{
+    transform: scale(1.01);
+}
+.section h2 {
+    color: #023e8a;
+    border-bottom: 2px solid #0077b6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
 #background-clip{
     position: fixed;
 }
