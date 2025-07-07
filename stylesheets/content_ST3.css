@@ -1,58 +1,47 @@
-/* Inherits fonts from the global styles.css */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    color: white; /* Default text color for the page */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 
-/* ================================== */
-/* PAGE LAYOUT
-/* This structure is based on content_ST2.css for consistency
-/* ================================== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 130px 15px 40px;
+}
+
 .content-layout {
     display: flex;
-    max-width: 1300px; /* A bit wider to accommodate the sidebar nicely */
-    margin: 0 auto; /* Center the layout */
-    
-    /* Correctly handle the fixed 120px header */
-    margin-top: 140px; 
-    margin-bottom: 40px;
-    
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
     gap: 40px;
 }
 
-/* ================================== */
-/* SIDEBAR NAVIGATION
-/* ================================== */
 .sidebar {
-    /* position: fixed would make it overlap the footer. 
-       position: sticky is a modern, better alternative */
     position: sticky;
-    top: 140px; /* Stick 20px below the fixed header */
+    top: 130px;
     width: 250px;
-    height: fit-content; /* Make height adjust to content */
-    
-    background-color: rgba(15, 11, 39, 0.7);
+    background: rgba(0, 0, 20, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* Make sidebar non-intrusive */
-    flex-shrink: 0; 
+    border-radius: 8px;
 }
 
 .sidebar h3 {
-    font-family: "Lilita One", sans-serif;
+    font-family: 'Lilita One', sans-serif;
     font-size: 1.8rem;
     margin-bottom: 20px;
     text-align: center;
-    letter-spacing: 1px;
-    color: #c4d9ff;
+    color: #99bbff;
 }
 
 .sidebar ul {
@@ -61,100 +50,77 @@ body {
 }
 
 .sidebar li {
-    margin-bottom: 15px; /* Spacing between nav items */
+    margin-bottom: 15px;
 }
 
 .sidebar a {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
-    color: #e0e0e0;
+    color: #ddd;
     text-decoration: none;
     padding: 10px;
     display: block;
     border-radius: 5px;
-    transition: all 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: #025ab8;
-    color: white;
-    transform: translateX(5px);
+    background: #0044cc;
+    color: #fff;
 }
 
-/* ================================== */
-/* MAIN CONTENT & CARDS
-/* ================================== */
 .main-content {
-    flex-grow: 1; /* Allow main content to take remaining space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .card {
-    background-color: rgba(15, 11, 39, 0.6);
+    background: rgba(0, 0, 20, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 30px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* Add scroll-margin-top so fixed header doesn't hide titles when jumping to anchors */
-    scroll-margin-top: 140px; 
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .card h2 {
-    font-family: "Lilita One", sans-serif;
-    font-size: 2.5rem; /* Slightly smaller for better flow */
-    color: #c4d9ff;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 2rem;
+    color: #99bbff;
     margin-bottom: 20px;
-    letter-spacing: 1px;
-    text-align: left;
 }
 
 .card p {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.7;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .card img {
     display: block;
-    margin: 25px auto;
+    margin: 20px auto;
     width: 100%;
     max-width: 600px;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ================================== */
-/* GO TO TOP BUTTON
-/* Style based on content_ST1.css
-/* ================================== */
 .go-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #025ab8;
-  color: white;
-  font-size: 1.5rem;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0044cc;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1000;
 }
 
 .go-top:hover {
-  background: #0099ff;
-  transform: scale(1.1);
+    background: #0099ff;
 }
