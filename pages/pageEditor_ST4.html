@@ -7,60 +7,79 @@
     <title>Page Editor Student - provide your student name</title>
 
     
-    <link rel="stylesheet" href="css/ST4_pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="/stylesheets/ST4_pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet" href="/stylesheets/styles.css">
 
 </head>
 <body>
     
     <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
 
-    <header id="top">
-        <h1>Replace the header with your teams' website header</h1>
+    <header>
+      <nav>
+        <div class="nav_logo">
+          <img src="../assets/img/Logo.png" alt="Logo">
+        </div>
+        <div class="nav_links">
+          <a class="currentPage" href="home.html">Home</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="table.html">Stats</a>
+          <a href="feedback.html">Feedback</a>
+          <a href="team.html">Team</a>
+          <a href="profile.html">Profile</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </nav>
     </header>
 
     <section class="stud">
-        <h2>Student name, student role</h2>
+        <h2>Dinal, Student 4</h2>
     </section>
 
     <div class="container">
         <!-- Main content area -->
         <main>
-
             <!-- Update those first three sections for the pages you were responsible to implement -->
-
             <section>
-                <h2 id="splash">Splash Page</h2>
+                <h2 id="userProfile" class="section">User Profile</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                    <p> User Profile page was built using semantic HTML elements such as <code>&lt;section&gt;</code>, <code>&lt;h2&gt;</code>, and <code>&lt;p&gt;</code> to provide clear structure and improve readability. 
+                      CSS was used for layout and styling, including flexbox for alignment and padding/margins for spacing.
+                       We used consistent font styles and colors to maintain visual harmony across the site.
+                       The use of IDs allowed for internal navigation and section targeting.</p>
                     
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-                    
+                      <p>
+                        Accessibility was addressed by using descriptive <code>alt</code> text for all images, ensuring high contrast between text and background, and keeping the navigation keyboard-friendly. Headings are used in a logical order to support screen readers, and links include meaningful text.
+                      </p>                    
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
-
+                    <p>
+                      <a href="validation_ST4.html">View validation for this page</a>
+                    </p>
                     <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="userProfile.html" class="userProfile">User Profile</a></p>
             </section>
 
             <section>
-                <h2 id="volunteer">Volunteer Page</h2>
+                <h2 id="sitemap" class="section">SiteMap</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
+                    <p>
+                      The Site Map page was created using structured HTML lists to represent the navigation paths of the website. An unordered list <code>&lt;ul&gt;</code> with nested list items <code>&lt;li&gt;</code> was used to show the site hierarchy clearly. Semantic tags like <code>&lt;nav&gt;</code> and <code>&lt;section&gt;</code> helped define content roles. CSS was used to style the list with proper spacing and indentation for clarity. Links within the site map point to relevant pages using anchor tags <code>&lt;a&gt;</code> for easy navigation.
+                    </p>
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
-
+                      <p>
+                        To improve accessibility, each link in the site map includes meaningful, descriptive text. The structure uses semantic elements and a clear heading hierarchy for screen reader compatibility. We ensured that users navigating with a keyboard can access all listed links, and contrast ratios were considered for readability.
+                      </p>
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <p><a href="validation_ST4.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="#">Include a link to the actual page you describe.</a></p>
             </section>
 
             <section>
-                <h2 id="content">Content Page</h2>
+                <h2 id="content" class="section">Content Page</h2>
                     <h3>Technical Description</h3>
                         <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
 
@@ -68,23 +87,33 @@
                         <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
 
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                        <p><a href="validation_ST4.html">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="content_ST4.html">Protect Ocean</a></p>
             </section>
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                <ul>
+                    <li>Responsive Design IssuesGetting the website to look good on both desktop and mobile screens was difficult.
+                     Elements were overlapping or misaligned, especially on smaller screens.</li>
+                    <li>Navigation ProblemsSetting up smooth navigation using anchor links (#id) was tricky.
+                     At first, some links didn't scroll correctly or landed in the wrong place.</li>
+                    <li>Navigation Problems Setting up smooth navigation using anchor links (#id) was tricky. At first, some links didn't scroll correctly or landed in the wrong place.</li>
+                    <li>File Naming and Structure Maintaining a clear and consistent folder structure (like separating pages, javascript, etc.) was challenging as the project grew.</li>
+                </ul>
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
-
-                    
+                <p>This website has been created in compliance with Janet regulations and web development best practices. We ensured the use of valid HTML5 and CSS3 code, semantic structure (e.g., using &lt;header&gt;, &lt;section&gt;, &lt;footer&gt;), and followed accessibility guidelines such as adding alternative text to images and ensuring good color contrast.</p>
+                <br>
+                <p>
+                The site layout is responsive and adjusts to different screen sizes, meeting the requirement for cross-device compatibility. We also used proper referencing for all borrowed images and content, and followed a consistent style across all pages. This shows our understanding and application of the required standards in web design and development.
+                </p>
+                      
             </section>
 
             <section>
@@ -121,7 +150,15 @@
     </div>
 
     <footer>
-        <p>Replace the footer with your teams' website footer</p>
-    </footer>
+    <div>
+      <div id="motto">Cleaning the Ocean One Step At A Time!</div><br>
+      <a class="footer-link" href="pageEditor_ST1.html">Page Editor Student 1 |</a>
+      <a class="footer-link" href="pageEditor_ST2.html">Page Editor Student 2 |</a>
+      <a class="footer-link" href="pageEditor_ST3.html">Page Editor Student 3 |</a>
+      <a class="footer-link" href="pageEditor_ST4.html">Page Editor Student 4 |</a>
+      <br><br>| &copy; 2025 Blue World Rising |
+      <a class="footer-link" href="teamContract.html">Team Contract</a>
+    </div>
+  </footer>
 </body>
 </html>
